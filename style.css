@@ -1,0 +1,40 @@
+.loader{
+    height: 100px;
+    width: 100px;
+    background-attachment: rgb(255, 255, 255);
+    border-radius: 50%;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px 85px 2px 2px;
+    position: relative;
+    animation: spin 0.5s linear infinite;
+}
+ .loader::before{
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 18px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 0%;
+    left: 82%;
+
+}
+.loader::after{
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 18px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    top:48%;
+    left: 66%;
+}
+@keyframes spin {
+    from{
+        transform:rotate(0deg) ;
+    }
+    to{
+        transform: rotate(360deg);
+    }
+} 
